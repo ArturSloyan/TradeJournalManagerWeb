@@ -17,14 +17,18 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--custom-gray);
+}
+
 ul,
 li {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: #d83d3d;
 }
 
 .main-nav {
@@ -56,7 +60,7 @@ body {
     text-decoration: none;
     border-radius: 30px;
     line-height: 45px;
-    color: #FFF;
+    color: white;
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
@@ -65,11 +69,11 @@ body {
 
 .main-nav li:nth-child(1) a {
     /* background: ; */
-    border: 2px solid #fff;
+    border: 2px solid white
 }
 
 .main-nav li:nth-child(1) a:hover {
-    background: #fff;
+    background: white;
     color: #d83d3d;
 }
 
@@ -115,7 +119,7 @@ body {
     position: relative;
     width: 90%;
     max-width: 600px;
-    background: #FFF;
+    background: white;
     margin: 3em auto 4em;
     cursor: auto;
     border-radius: 0.25em;
@@ -161,7 +165,7 @@ body {
 }
 
 .user-modal-container .switcher a.selected {
-    background: #FFF;
+    background: white;
     color: #505260;
 }
 
@@ -272,7 +276,7 @@ body {
     padding: 16px 0;
     cursor: pointer;
     background: #F64747;
-    color: #FFF;
+    color: white;
     font-weight: bold;
     border: none;
     -webkit-appearance: none;
@@ -321,7 +325,7 @@ body {
     background: red;
     padding: .8em;
     z-index: 2;
-    color: #FFF;
+    color: white;
     font-size: 13px;
     font-size: 0.8125rem;
     border-radius: 0.25em;
@@ -405,7 +409,7 @@ body {
 }
 
 .form-bottom-message a {
-    color: #FFF;
+    color: white;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, .0);
     padding: 0 0 0 2px;
@@ -418,7 +422,7 @@ body {
 .form-bottom-message a:hover {
     -webkit-animation: borderslide-3px .5s;
     animation: borderslide-3px .5s;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid white;
     padding-bottom: 3px;
 }
 
@@ -512,22 +516,7 @@ body {
     display: block;
 }
 
-#emblem {
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
-    font-family: 'Brush Script MT', cursive;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--custom-gray);
-}
+/* SEPERATOR */
 
 div {
     padding: 16px;
