@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.25">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="icon" type="image/ico" href="Resources/TradeJournalLogo.ico" />
     <link rel="stylesheet" href="./style.css">
-    <title>Trade Journal</title>
+    <title>Trade Journal Login</title>
 </head>
 
 <body>
@@ -39,13 +40,12 @@
                         <label class="image-replace password" for="signin-password">Password</label>
                         <input class="full-width has-padding has-border" id="signin-password" type="password"
                             placeholder="Password">
-                        <a class="hide-password">Show</a>
                         <span class="error-message">Wrong password! Try again.</span>
                     </p>
 
                     <p class="fieldset">
                         <input type="checkbox" id="remember-me">
-                        <label style="color:black;" for="remember-me">Remember me</label>
+                        <label for="remember-me">Remember me</label>
                     </p>
 
                     <p class="fieldset">
@@ -77,14 +77,13 @@
                         <label class="image-replace password" for="signup-password">Password</label>
                         <input class="full-width has-padding has-border" id="signup-password" type="password"
                             placeholder="Password">
-                        <a class="hide-password">Show</a>
                         <span class="error-message">Your password has to be at least 6 characters long!</span>
                     </p>
 
                     <p class="fieldset">
                         <input type="checkbox" id="accept-terms">
-                        <label style="color:black;" for="accept-terms">I agree to the <a class="accept-terms"
-                                href="#0">Terms</a></label>
+                        <label for="accept-terms">I agree to the <a class="accept-terms"
+                                href="HTML/terms.html">Terms</a></label>
                     </p>
 
                     <p class="fieldset">
@@ -110,7 +109,7 @@
                     </p>
                 </form>
 
-                <p class="form-bottom-message"><a href="#0">Back to log-in</a></p>
+                <p class="form-bottom-message"><a>Back to log-in</a></p>
             </div>
         </div>
     </div>

@@ -1,3 +1,5 @@
+
+// zu vanilla JS ändern => ist heute der standart und soll viel schneller sein
 jQuery(document).ready(function ($) {
   var $form_modal = $('.user-modal'),
     $form_signin = $form_modal.find('#signin'),
@@ -46,15 +48,6 @@ jQuery(document).ready(function ($) {
     ($(event.target).is($tab_signin)) ? signin_selected() : signup_selected();
   });
 
-  //hide or show password
-  $('.hide-password').on('click', function () {
-    var $this = $(this), $password_field = $this.prev('input');
-    ('password' == $password_field.attr('type')) ? $password_field.attr('type', 'text') : $password_field.attr('type', 'password');
-    ('Show' == $this.text()) ? $this.text('Hide') : $this.text('Show');
-    //focus and move cursor to the end of input field
-    $password_field.putCursorAtEnd();
-  });
-
   //show forgot-password form 
   $forgot_password_link.on('click', function (event) {
     event.preventDefault();
@@ -101,7 +94,6 @@ jQuery(document).ready(function ($) {
 
 
   //IE9 placeholder fallback
-  //credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
   if (!Modernizr.input.placeholder) {
     $('[placeholder]').focus(function () {
       var input = $(this);
@@ -125,21 +117,3 @@ jQuery(document).ready(function ($) {
   }
 
 });
-
-
-//credits https://css-tricks.com/snippets/jquery/move-cursor-to-end-of-textarea-or-input/
-jQuery.fn.putCursorAtEnd = function () {
-  return this.each(function () {
-    // If this function exists...
-    if (this.setSelectionRange) {
-      // ... then use it (Doesn't work in IE)
-      // Double the length because Opera is inconsistent about whether a carriage return is one character or two. Sigh.
-      var len = $(this).val().length * 2;
-      this.setSelectionRange(len, len);
-    } else {
-      // ... otherwise replace the contents with itself
-      // (Doesn't work in Google Chrome)
-      $(this).val($(this).val());
-    }
-  });
-};

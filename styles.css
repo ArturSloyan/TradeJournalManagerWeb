@@ -20,7 +20,6 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    margin: 1;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--custom-gray);
 }
@@ -41,7 +40,6 @@ li {
 
 .main-nav ul {
     position: absolute;
-    width: 100%;
     top: 40%;
     margin: 0;
     padding: 0;
@@ -74,17 +72,16 @@ li {
 
 .main-nav li:nth-child(1) a:hover {
     background: white;
-    color: #d83d3d;
+    color: darkgreen;
 }
 
 .main-nav li:nth-child(2) a {
-    /* background: #9e2c2c; */
-    border: 2px solid #9e2c2c;
+    border: 2px solid darkgreen;
 }
 
 .main-nav li:nth-child(2) a:hover {
-    background: #b13131;
-    border: 2px solid #b13131;
+    background: darkgreen;
+    border: 2px solid darkgreen;
 }
 
 .user-modal {
@@ -93,7 +90,6 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(127, 37, 37, 0.9);
     z-index: 3;
     overflow-y: auto;
     cursor: pointer;
@@ -200,6 +196,8 @@ li {
 .form label {
     font-size: 14px;
     font-size: 0.875rem;
+    cursor: pointer;
+    color: black;
 }
 
 .form label.image-replace {
@@ -315,6 +313,7 @@ li {
     font-size: 14px;
     font-size: 0.875rem;
     color: #343642;
+    cursor: pointer;
 }
 
 .form .error-message {
@@ -406,6 +405,7 @@ li {
     text-align: center;
     font-size: 14px;
     font-size: 0.875rem;
+    cursor: pointer;
 }
 
 .form-bottom-message a {
@@ -464,20 +464,6 @@ li {
     50% {
         padding-bottom: 2px;
     }
-}
-
-.close-form {
-    /* form X button on top right */
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 0;
-    top: -40px;
-    background: url("../img/icon-close.svg") no-repeat center center;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 @media only screen and (min-width: 1170px) {
