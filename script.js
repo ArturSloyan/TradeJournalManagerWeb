@@ -1,5 +1,3 @@
-
-// zu vanilla JS ändern => ist heute der standart und soll viel schneller sein
 jQuery(document).ready(function ($) {
   var $form_modal = $('.user-modal'),
     $form_signin = $form_modal.find('#signin'),
@@ -115,5 +113,4 @@ jQuery(document).ready(function ($) {
       })
     });
   }
-
 });
