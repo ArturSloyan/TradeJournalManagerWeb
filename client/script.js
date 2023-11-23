@@ -80,15 +80,15 @@ jQuery(document).ready(function ($) {
     $form_forgot_password.addClass('is-selected');
   }
 
-  //REMOVE THIS - it's just to show error messages 
-  $form_signin.find('input[type="submit"]').on('click', function (event) {
-    event.preventDefault();
-    $form_signin.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
-  });
-  $form_signup.find('input[type="submit"]').on('click', function (event) {
-    event.preventDefault();
-    $form_signup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
-  });
+  // //REMOVE THIS - it's just to show error messages 
+  // $form_signin.find('input[type="submit"]').on('click', function (event) {
+  //   event.preventDefault();
+  //   $form_signin.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+  // });
+  // $form_signup.find('input[type="submit"]').on('click', function (event) {
+  //   event.preventDefault();
+  //   $form_signup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+  // });
 
 
   //IE9 placeholder fallback

@@ -8,7 +8,8 @@
     font-size: 100px;
     font-family: 'Brush Script MT', cursive;
     text-align: center;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 *,
@@ -31,7 +32,6 @@ li {
 }
 
 .main-nav {
-    width: 90%;
     max-width: 240px;
     margin: 0 auto;
     height: 100%;
@@ -316,7 +316,7 @@ li {
     cursor: pointer;
 }
 
-.form .error-message {
+/* .form .error-message {
     display: inline-block;
     position: absolute;
     left: -5px;
@@ -328,7 +328,7 @@ li {
     font-size: 13px;
     font-size: 0.8125rem;
     border-radius: 0.25em;
-    /* prevent click and touch events */
+    prevent click and touch events 
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
@@ -337,7 +337,7 @@ li {
 }
 
 .form .error-message::after {
-    /* triangle */
+    triangle 
     content: '';
     position: absolute;
     left: 22px;
@@ -354,7 +354,7 @@ li {
     visibility: visible;
     -webkit-transition: opacity 0.2s 0, visibility 0 0;
     transition: opacity 0.2s 0, visibility 0 0;
-}
+} */
 
 @media only screen and (min-width: 600px) {
     .form {
